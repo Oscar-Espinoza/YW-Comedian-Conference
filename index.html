@@ -5,55 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c3c0d932d2.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
-  <header>
+  <header class="nav-bar">
     <i class="fa-solid fa-bars menu-btn"></i>
   </header>
-
-  <div class="about-page">
-
-    <section class="about">
-      <h1 class="p-title">YEARLY COMEDIANS WORLD CONFERENCE</h1>
-      <p class="description">A joyful reunion of the most popular living comedians from all over the globe, to celebrate comedy, taking place this December in Spain.</p>
-      <div class="contact">
-        <p class="description">2022.12.15(THU) - 16(FRI)</p>
-        <p class="email">oscardavid9420@gmail.com</p>
-      </div>
-    </section>
-
-    <section class="logo">
-      <div class="s-title">
-        <h2>Yearly Comedians World Conference Logo</h2>
-        <hr>
-      </div>
-      <p class="description">A joyful reunion of the most popular living comedians from all over the globe, to celebrate comedy, taking place this December in Spain.</p>
-      <div class="logo-img">
-      </div>
-    </section>
-
-    <section class="past-events">
-      <div class="s-title">
-        <h2>See the past Yearly Conferences</h2>
-        <hr>
-      </div>
-      <div class="event">
-        <h3 class="title"></h3>
-        <p class="name"></p>
-      </div>
-      <div class="event">
-        <h3 class="title"></h3>
-        <p class="name"></p>
-      </div>
-    </section>
-  </div>
 
   <div class="home-page">
     <section class="home">
       <h1 class="p-title">YEARLY COMEDIANS WORLD CONFERENCE</h1>
-      <p class="event-description">A joyful reunion of the most popular living comedians from all over the globe, to celebrate comedy, taking place this December in Spain.</p>
+      <p class="description">A joyful reunion of the most popular living comedians from all over the globe, to celebrate comedy, taking place this December in Spain.</p>
       <div class="date-and-place">
         <p class="date">2022.12.15(THU) - 16(FRI)</p>
         <p class="place">@ Camp Nou, C. d'Arístides Maillol, 12, 08028 Barcelona, Spain</p>
@@ -76,7 +42,8 @@
   
         <li class="activity">
           <img src="/media/board-icon.png" alt="" class="icon">
-          <h3 class="title">Conference Exhibition</h3>
+          <h3 class="title">Conference 
+            Exhibition</h3>
           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis unde quod rem?</p>
         </li>
   
@@ -101,7 +68,7 @@
       </ul>
   
       
-      <div class="join-btn"></div>
+      <div class="join-btn">Join YW Comedians Conference 2022</div>
     </section>
   
     <section class="featured-comedians">
@@ -110,19 +77,50 @@
         <hr>
       </div>
   
-      <ul class="comedians">
-        <li class="comedian">
-          <div class="photo"><img src="/media/Ali_Wong.jpeg" alt=""></div>
-          <div class="information">
-            <h3 class="name">Ali Wong</h3>
-            <p class="description">One of the best comedians in the US</p>
-            <hr>
-            <p class="background">Ali Wong was born and raised in the US in the state of Texas</p>
-          </div>
-        </li>
+      <ul class="comedians" id='comedians-list'>
       </ul>
     </section>
   </div>
 
+  <div class="about-page">
+
+    <section class="about">
+      <h1 class="p-title">YEARLY WORLDWIDE COMEDIANS CONFERENCE</h1>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae porro impedit quod omnis repellendus amet consequatur iste aspernatur dolorem! Quaerat obcaecati excepturi recusandae molestias numquam.</p>
+      <div class="contact">
+        <p class="contact-description">Please contact us per Email for any further questions about YW Comedians Conference 2022</p>
+        <p class="email">ywcc2022@ywspain.com</p>
+      </div>
+    </section>
+
+    <section class="logo">
+      <div class="s-title">
+        <h2>Yearly Worldwide Comedians Conference Logo</h2>
+        <hr>
+      </div>
+      <p class="description">The logo of YW Comedians Conference was decided in an eating hot dogs competence on 8. June to 7. July. </p>
+      <div class="logo-container">
+        <img src='media/event-logo.png' alt="">
+      </div>
+    </section>
+
+    <section class="past-events">
+      <div class="s-title">
+        <h2>See the past Yearly Conferences</h2>
+        <p class="description">Take a look at the last two YW Comedian Conference events which took place in Buenos Aires and in Warsaw</p>
+        <hr>
+      </div>
+      <div class="past-event event-2013">
+        <h3 class="year">2013</h3>
+        <p class="name">YW Comedians Conference in Buenos Aires</p>
+      </div>
+      <div class="past-event event-2011">
+        <h3 class="year">2011</h3>
+        <p class="name">YW Comedians Conference in Warsaw</p>
+      </div>
+    </section>
+  </div>
+  
+<script src='app.js'></script>
 </body>
 </html>
