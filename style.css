@@ -1,0 +1,128 @@
+/* 
+orange: #ec5242
+gray: #d3d3d3
+black: #272a31 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  position: relative;
+  background: #f0f0f0;
+  font-family: 'roboto', sans-serif;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.home-page {
+  display: none;
+}
+
+.home {
+  min-height: 100vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-program {
+  background: #272a31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.s-title hr {
+  width: 10%;
+  height: 1px;
+  border: none;
+  background-color: #ec5242;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.activity {
+  display: grid;
+  grid-template-columns: auto 1fr 2fr;
+  grid-gap: 12px;
+  align-items: center;
+  width: 95%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 20px;
+}
+
+.activity .icon {
+  width: 32px;
+  height: 32px;
+}
+
+.activity .title {
+  color: #ec5242;
+}
+
+.activity .description {
+  display: inline-flex;
+  text-align: justify;
+}
+
+.join-btn {
+  background: #ec5242;
+  width: 80%;
+  height: 60px;
+}
+
+/* Featured comedians */
+
+.featured-comedians {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.comedians {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comedian {
+  display: flex;
+  gap: 20px;
+}
+
+.comedian .photo img {
+  width: 100px;
+}
+
+.comedian .information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.comedian .information hr {
+  width: 10%;
+}
