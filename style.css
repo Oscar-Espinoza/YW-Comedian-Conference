@@ -1,8 +1,3 @@
-/* 
-orange: #ec5242
-gray: #d3d3d3
-black: #272a31 
-*/
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +39,6 @@ section {
 
 .menu-links {
   padding-top: 20px;
-  display: flex;
   flex-direction: column;
   position: fixed;
   width: 100%;
@@ -87,9 +81,8 @@ section {
   font-weight: 900;
   font-size: 24px;
   border-bottom: #4f4f4f 1px solid;
-  display: block;  
+  display: block;
 }
-
 
 /* Home page */
 
@@ -570,7 +563,6 @@ section.logo {
 
   .comedian {
     flex: 1;
-    flex-basis: 100%;
     min-width: 35%;
   }
 
@@ -597,7 +589,6 @@ section.logo {
 
   .past-event {
     flex: 1;
-    flex-basis: 100%;
   }
 
   .past-event .name {
