@@ -52,7 +52,7 @@ for (let i = 0; i < 2; i += 1) {
       <hr>
       <p class='background'>${comedian.background}</p>
     </div>
-    `
+    `;
   comediansListElement.appendChild(comedianElement);
   comediansDisplayed += 1;
 }
@@ -97,7 +97,7 @@ document.getElementById('more-btn').addEventListener('click', () => {
         <hr>
         <p class='background'>${comedian.background}</p>
       </div>
-      `
+      `;
     comediansListElement.appendChild(comedianElement);
   }
   document.getElementById('more-btn').classList.remove('active');
