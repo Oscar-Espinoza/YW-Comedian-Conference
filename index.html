@@ -12,11 +12,34 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="nav-bar">
-    <i class="fa-solid fa-bars menu-btn"></i>
+  <header class="navbar">
+    <i class="fa-solid fa-bars menu-btn" id="menu-btn"></i>
+    <div class="navbar-menu">
+      <div class="menu-options">
+        <ul class="options">
+          <li class="nav-icon"><i class="fa-brands fa-facebook"></i></li>
+          <li class="nav-icon"><i class="fa-brands fa-square-twitter"></i></li>
+          <li class="nav-option">English</li>
+          <li class="nav-option">My page</li>
+          <li class="nav-option">Logout</li>
+        </ul>
+      </div>
+      <nav class="menu-links" id="menu">
+        <i class="fa-regular fa-circle-xmark close-btn menu-btn" id="close-btn"></i>
+        <img src='media/event-logo.png' alt='logo' class='nav-logo' id='nav-logo'>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#" id="about-link">About</a></li>
+          <li class="nav-link"><a href="#">Program</a></li>
+          <li class="nav-link"><a href="#">Join</a></li>
+          <li class="nav-link"><a href="#">Sponsor</a></li>
+          <li class="nav-link"><a href="#">News</a></li>
+          <li class="nav-link"><a href="#">YWCC Campaign</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div class="home-page">
+  <div class="home-page active" id="home-page">
     <section class="home">
       <h1 class="p-title">YEARLY COMEDIANS WORLD CONFERENCE</h1>
       <p class="description">A joyful reunion of the most popular living comedians from all over the globe, to celebrate comedy, taking place this December in Spain.</p>
@@ -69,6 +92,8 @@
   
       
       <div class="join-btn">Join YW Comedians Conference 2022</div>
+
+      <a href="#" class="see-program">SEE THE WHOLE PROGRAM</a>
     </section>
   
     <section class="featured-comedians">
@@ -79,10 +104,14 @@
   
       <ul class="comedians" id='comedians-list'>
       </ul>
+
+      <div class="more-btn active" id="more-btn">
+        <p>MORE</p><i class="fa-solid fa-chevron-down"></i>
+      </div>
     </section>
   </div>
 
-  <div class="about-page">
+  <div class="about-page" id="about-page">
 
     <section class="about">
       <h1 class="p-title">YEARLY WORLDWIDE COMEDIANS CONFERENCE</h1>
@@ -110,13 +139,16 @@
         <p class="description">Take a look at the last two YW Comedian Conference events which took place in Buenos Aires and in Warsaw</p>
         <hr>
       </div>
-      <div class="past-event event-2013">
-        <h3 class="year">2013</h3>
-        <p class="name">YW Comedians Conference in Buenos Aires</p>
-      </div>
-      <div class="past-event event-2011">
-        <h3 class="year">2011</h3>
-        <p class="name">YW Comedians Conference in Warsaw</p>
+
+      <div class="past-events-container">
+        <div class="past-event event-2013">
+          <h3 class="year">2013</h3>
+          <p class="name">YW Comedians Conference in Buenos Aires</p>
+        </div>
+        <div class="past-event event-2011">
+          <h3 class="year">2011</h3>
+          <p class="name">YW Comedians Conference in Warsaw</p>
+        </div>        
       </div>
     </section>
   </div>
