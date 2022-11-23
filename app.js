@@ -52,7 +52,6 @@ const addComediansToList = (amountDisplayed, amountToDisplay) => {
       </div>
       `;
     comediansListElement.appendChild(comedianElement);
-    comediansDisplayed += 1;
   }
 }
 
