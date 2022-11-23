@@ -26,4 +26,4 @@ Give a ⭐️ if you like this project!
 
 ## Watch my walkthrough video for the website
 
-Loom video link:
+Loom video link: https://www.loom.com/share/4685dac778c7469fb5d9b3a97d199be6
