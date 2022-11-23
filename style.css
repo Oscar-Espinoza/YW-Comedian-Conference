@@ -117,10 +117,10 @@ section {
   background: url(media/comedy-background.jpg);
   background-size: cover;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   opacity: 0.2;
   z-index: -1;
 }
@@ -171,10 +171,10 @@ section {
   background: url(media/x-background.png);
   background-repeat: repeat;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   opacity: 0.2;
   z-index: -1;
 }
@@ -341,10 +341,10 @@ section {
   background: url(media/comedy-background.jpg);
   background-size: cover;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   opacity: 0.2;
   z-index: -1;
 }
@@ -358,7 +358,7 @@ section {
   font-weight: 900;
 }
 
-.about .description {
+.about-description {
   font-weight: 400;
   padding: 10px;
   background: rgba(255, 255, 255, 1);
@@ -395,7 +395,7 @@ section.logo {
   gap: 20px;
 }
 
-section.logo .description {
+.logo-description {
   font-size: 12px;
   color: #4f4f4f;
   font-weight: 700;
@@ -418,7 +418,7 @@ section.logo .description {
   background: #fff;
 }
 
-.past-events .description {
+.past-events-description {
   font-size: 12px;
   font-weight: 700;
 }
@@ -437,7 +437,7 @@ section.logo .description {
   justify-content: center;
   align-items: center;
   color: #f0f0f0;
-  box-shadow: inset 0 0 0 1000px rgba(236, 82, 66, .55);
+  box-shadow: inset 0 0 0 1000px rgba(236, 82, 66, 0.55);
 }
 
 .event-2013 {
@@ -447,13 +447,12 @@ section.logo .description {
 
 .event-2011 {
   background: url(media/2011-event.jpg) no-repeat;
-  background-size: 100% 100%; 
+  background-size: 100% 100%;
 }
 
 /* .event-2013::before {
   content: "";
   position: absolute;
-  
   z-index: -1;
   top: 0;
   left: 0;
@@ -468,7 +467,8 @@ section.logo .description {
     padding: 0;
   }
 
-  #menu-btn, #close-btn {
+  #menu-btn,
+  #close-btn {
     display: none;
   }
 
@@ -477,7 +477,7 @@ section.logo .description {
     background: #272a31;
     display: block;
   }
-  
+
   .navbar-menu .options {
     display: flex;
     justify-content: end;
@@ -569,8 +569,8 @@ section.logo .description {
   }
 
   .comedian {
-    flex-basis: 100%;
     flex: 1;
+    flex-basis: 100%;
     min-width: 35%;
   }
 
@@ -596,8 +596,8 @@ section.logo .description {
   }
 
   .past-event {
-    flex-basis: 100%;
     flex: 1;
+    flex-basis: 100%;
   }
 
   .past-event .name {
@@ -605,5 +605,4 @@ section.logo .description {
     font-size: 12px;
     font-weight: 700;
   }
-
 }
