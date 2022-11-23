@@ -37,6 +37,8 @@ const comediansList = [
   },
 ];
 
+const comediansListElement = document.getElementById('comedians-list');
+
 const addComediansToList = (amountDisplayed, amountToDisplay) => {
   for (let i = amountDisplayed; i < amountToDisplay; i += 1) {
     const comedian = comediansList[i];
@@ -53,9 +55,7 @@ const addComediansToList = (amountDisplayed, amountToDisplay) => {
       `;
     comediansListElement.appendChild(comedianElement);
   }
-}
-
-const comediansListElement = document.getElementById('comedians-list');
+};
 
 if (window.screen.width >= 768) {
   addComediansToList(0, comediansList.length);
