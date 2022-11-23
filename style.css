@@ -596,4 +596,8 @@ section.logo {
     font-size: 12px;
     font-weight: 700;
   }
+
+  .more-btn.active {
+    display: none;
+  }
 }

@@ -37,24 +37,31 @@ const comediansList = [
   },
 ];
 
-const comediansListElement = document.getElementById('comedians-list');
-let comediansDisplayed = 0;
+const addComediansToList = (amountDisplayed, amountToDisplay) => {
+  for (let i = amountDisplayed; i < amountToDisplay; i += 1) {
+    const comedian = comediansList[i];
+    const comedianElement = document.createElement('li');
+    comedianElement.classList.add('comedian');
+    comedianElement.innerHTML = `
+      <div class='photo'><img src='media/${comedian.photoUrl}'></div>
+      <div class='information'>
+        <h3 class='name'>${comedian.name}</h3>
+        <p class='description'>${comedian.description}</p>
+        <hr>
+        <p class='background'>${comedian.background}</p>
+      </div>
+      `;
+    comediansListElement.appendChild(comedianElement);
+    comediansDisplayed += 1;
+  }
+}
 
-for (let i = 0; i < 2; i += 1) {
-  const comedian = comediansList[i];
-  const comedianElement = document.createElement('li');
-  comedianElement.classList.add('comedian');
-  comedianElement.innerHTML = `
-    <div class='photo'><img src='media/${comedian.photoUrl}'></div>
-    <div class='information'>
-      <h3 class='name'>${comedian.name}</h3>
-      <p class='description'>${comedian.description}</p>
-      <hr>
-      <p class='background'>${comedian.background}</p>
-    </div>
-    `;
-  comediansListElement.appendChild(comedianElement);
-  comediansDisplayed += 1;
+const comediansListElement = document.getElementById('comedians-list');
+
+if (window.screen.width >= 768) {
+  addComediansToList(0, comediansList.length);
+} else {
+  addComediansToList(0, 2);
 }
 
 document.querySelectorAll('.menu-btn').forEach((btn) => {
@@ -85,20 +92,6 @@ document.getElementById('nav-logo').addEventListener('click', () => {
 });
 
 document.getElementById('more-btn').addEventListener('click', () => {
-  for (comediansDisplayed; comediansDisplayed < comediansList.length; comediansDisplayed += 1) {
-    const comedian = comediansList[comediansDisplayed];
-    const comedianElement = document.createElement('li');
-    comedianElement.classList.add('comedian');
-    comedianElement.innerHTML = `
-      <div class='photo'><img src='media/${comedian.photoUrl}'></div>
-      <div class='information'>
-        <h3 class='name'>${comedian.name}</h3>
-        <p class='description'>${comedian.description}</p>
-        <hr>
-        <p class='background'>${comedian.background}</p>
-      </div>
-      `;
-    comediansListElement.appendChild(comedianElement);
-  }
+  addComediansToList(2, comediansList.length);
   document.getElementById('more-btn').classList.remove('active');
 });
