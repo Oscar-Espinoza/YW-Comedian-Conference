@@ -39,6 +39,10 @@ const comediansList = [
 
 const comediansListElement = document.getElementById('comedians-list');
 
+if (document.title === 'About') {
+  document.getElementById('about-link').classList.add('active');
+}
+
 const addComediansToList = (amountDisplayed, amountToDisplay) => {
   for (let i = amountDisplayed; i < amountToDisplay; i += 1) {
     const comedian = comediansList[i];
@@ -72,14 +76,6 @@ document.querySelectorAll('.menu-btn').forEach((btn) => {
       menu.classList.add('active');
     }
   });
-});
-
-document.getElementById('about-link').addEventListener('click', () => {
-  document.getElementById('home-page').classList.remove('active');
-  document.getElementById('about-page').classList.add('active');
-  if (document.getElementById('menu').classList.contains('active')) {
-    document.getElementById('menu').classList.remove('active');
-  }
 });
 
 document.getElementById('nav-logo').addEventListener('click', () => {
