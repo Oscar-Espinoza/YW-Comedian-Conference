@@ -5,6 +5,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [Presentation video](#presentation-video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
 - [👥 Authors](#authors)
@@ -52,7 +53,11 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://www.loom.com/share/4685dac778c7469fb5d9b3a97d199be6)
+- [Live Demo Link](https://oscar-espinoza.github.io/CC-Global-Summit/)
+
+## Video Presentation
+
+- [Video presentation Link](https://www.loom.com/share/4685dac778c7469fb5d9b3a97d199be6) <a name="presentation-video"></a>
 
 <!-- GETTING STARTED -->
 
@@ -94,4 +99,6 @@ If you like this project feel free to follow me on github or send me a friend re
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for encourage me to do this project.
+- First of all, I would like to thank [Cindy Shin](https://www.behance.net/adagio07) for creating the design this project was made on, you can see it in this link [Original design][https://www.behance.net/gallery/29845175/CC-Global-Summit-2015]
+
+- And I would like to thank Microverse for encourage me to do this project.

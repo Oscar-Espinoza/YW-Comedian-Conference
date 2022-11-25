@@ -90,14 +90,6 @@ section {
 
 /* Home page */
 
-.home-page {
-  display: none;
-}
-
-.home-page.active {
-  display: block;
-}
-
 .home {
   min-height: 70vh;
   display: flex;
@@ -123,38 +115,39 @@ section {
 
 .subtitle-home {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 30px;
   color: #ec5242;
 }
 
 .p-title {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 3rem;
   margin-bottom: 20px;
-  color: #ec5242;
-  text-shadow: 1px 1px 0 black;
+  background: linear-gradient(90deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home .description {
-  font-weight: 400;
+  font-weight: 700;
   padding: 10px;
   background: rgba(234, 235, 240, 0.6);
   border: 2px solid white;
   font-size: 12px;
   margin-bottom: 20px;
-  max-width: 90%;
+  max-width: 450px;
   color: #4f4f4f;
 }
 
 .home .date {
   font-weight: 900;
-  font-size: 24px;
+  font-size: 30px;
   color: #4f4f4f;
 }
 
 .home .place {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   color: #4f4f4f;
 }
 
@@ -214,6 +207,10 @@ section {
   padding: 0 15px;
 }
 
+.activity:hover {
+  border: #fff solid 2px;
+}
+
 .activity .icon {
   width: 32px;
   height: 32px;
@@ -229,8 +226,8 @@ section {
   display: inline-flex;
   text-align: justify;
   color: #fff;
-  font-weight: 300;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .join-btn {
@@ -273,8 +270,24 @@ section {
   gap: 20px;
 }
 
-.comedian .photo img {
+.photo {
+  position: relative;
+}
+
+.photo::before {
+  content: '';
+  position: absolute;
+  background: url(/media/chessbg.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  top: -12px;
+  left: -12px;
+}
+
+.comedian-photo {
   width: 100px;
+  position: relative;
 }
 
 .comedian .information {
@@ -321,14 +334,6 @@ section {
 
 /* About page */
 
-.about-page {
-  display: none;
-}
-
-.about-page.active {
-  display: block;
-}
-
 .about {
   min-height: 70vh;
   display: flex;
@@ -337,6 +342,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
+  justify-content: space-around;
 }
 
 .about::before {
@@ -352,8 +358,21 @@ section {
   z-index: -1;
 }
 
-.about .p-title {
+.about-title {
   text-align: center;
+  font-size: 45px;
+  color: #ec5242;
+  position: relative;
+  font-weight: 900;
+}
+
+.about-title::after {
+  content: '';
+  border-bottom: rgb(236, 82, 66, 0.4) 2px solid;
+  position: absolute;
+  bottom: -10%;
+  width: 20px;
+  left: 50%;
 }
 
 .about-page .s-title {
@@ -362,7 +381,7 @@ section {
 }
 
 .about-description {
-  font-weight: 400;
+  font-weight: 700;
   padding: 10px;
   background: rgba(255, 255, 255, 1);
   border: 2px solid #e3e3e3;
@@ -594,7 +613,7 @@ footer {
 
   .home {
     align-items: baseline;
-    width: 50vw;
+    width: 66vw;
     margin: 0 0 0 10vw;
   }
 
@@ -614,6 +633,7 @@ footer {
     align-items: baseline;
     text-align: center;
     padding-top: 10px;
+    cursor: pointer;
   }
 
   .activity .description {
