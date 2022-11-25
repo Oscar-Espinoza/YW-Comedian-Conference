@@ -49,7 +49,7 @@ const addComediansToList = (amountDisplayed, amountToDisplay) => {
     const comedianElement = document.createElement('li');
     comedianElement.classList.add('comedian');
     comedianElement.innerHTML = `
-      <div class='photo'><img class='comedian-photo' src='media/${comedian.photoUrl}'></div>
+      <div class='photo'><img src='media/${comedian.photoUrl}'></div>
       <div class='information'>
         <h3 class='name'>${comedian.name}</h3>
         <p class='description'>${comedian.description}</p>
