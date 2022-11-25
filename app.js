@@ -58,13 +58,12 @@ const addComediansToList = (amountDisplayed, amountToDisplay) => {
       </div>
       `;
     if (document.title === 'Home') {
-      comediansListElement.appendChild(comedianElement);      
+      comediansListElement.appendChild(comedianElement);  
     }
   }
 };
 
 if (window.screen.width >= 768 && document.title === 'Home') {
-  console.log('h')
   addComediansToList(0, comediansList.length);
 } else {
   addComediansToList(0, 2);
@@ -93,5 +92,5 @@ if (document.title === 'Home') {
   document.getElementById('more-btn').addEventListener('click', () => {
     addComediansToList(2, comediansList.length);
     document.getElementById('more-btn').classList.remove('active');
-  });  
+  });
 }
