@@ -58,7 +58,7 @@ const addComediansToList = (amountDisplayed, amountToDisplay) => {
       </div>
       `;
     if (document.title === 'Home') {
-      comediansListElement.appendChild(comedianElement);  
+      comediansListElement.appendChild(comedianElement);
     }
   }
 };
