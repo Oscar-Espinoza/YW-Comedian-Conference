@@ -57,11 +57,14 @@ const addComediansToList = (amountDisplayed, amountToDisplay) => {
         <p class='background'>${comedian.background}</p>
       </div>
       `;
-    comediansListElement.appendChild(comedianElement);
+    if (document.title === 'Home') {
+      comediansListElement.appendChild(comedianElement);      
+    }
   }
 };
 
-if (window.screen.width >= 768) {
+if (window.screen.width >= 768 && document.title === 'Home') {
+  console.log('h')
   addComediansToList(0, comediansList.length);
 } else {
   addComediansToList(0, 2);
@@ -86,7 +89,9 @@ document.getElementById('nav-logo').addEventListener('click', () => {
   }
 });
 
-document.getElementById('more-btn').addEventListener('click', () => {
-  addComediansToList(2, comediansList.length);
-  document.getElementById('more-btn').classList.remove('active');
-});
+if (document.title === 'Home') {
+  document.getElementById('more-btn').addEventListener('click', () => {
+    addComediansToList(2, comediansList.length);
+    document.getElementById('more-btn').classList.remove('active');
+  });  
+}
