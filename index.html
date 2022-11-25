@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c3c0d932d2.js" crossorigin="anonymous"></script>
+  <title>Home</title>
+</head>
+<body>
+  <header class="navbar">
+    <i class="fa-solid fa-bars menu-btn" id="menu-btn"></i>
+    <div class="navbar-menu">
+      <div class="menu-options">
+        <ul class="options">
+          <li class="nav-icon"><i class="fa-brands fa-facebook"></i></li>
+          <li class="nav-icon"><i class="fa-brands fa-square-twitter"></i></li>
+          <li class="nav-option">English</li>
+          <li class="nav-option">My page</li>
+          <li class="nav-option">Logout</li>
+        </ul>
+      </div>
+      <nav class="menu-links" id="menu">
+        <i class="fa-regular fa-circle-xmark close-btn menu-btn" id="close-btn"></i>
+        <a href="index.html"><img src='media/event-logo.png' alt='logo' class='nav-logo' id='nav-logo'></a>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="about.html">About</a></li>
+          <li class="nav-link"><a href="#">Program</a></li>
+          <li class="nav-link"><a href="#">Join</a></li>
+          <li class="nav-link"><a href="#">Sponsor</a></li>
+          <li class="nav-link"><a href="#">News</a></li>
+          <li class="nav-link"><a href="#">YWCC Campaign</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="home-page active" id="home-page">
+    <section class="home">
+      <h2 class="subtitle-home">"Hello! Sharing World"</h2>
+      <h1 class="p-title">YEARLY WORLD COMEDIANS CONFERENCE</h1>
+      <p class="description">A joyful reunion of the most popular living comedians from all over the globe, to celebrate comedy, taking place this December in Spain.</p>
+      <div class="date-and-place">
+        <p class="date">2022.12.15(THU) - 16(FRI)</p>
+        <p class="place">@ Camp Nou, C. d'Arístides Maillol, 12, 08028 Barcelona, Spain</p>
+      </div>
+    </section>
+  
+    <section class="main-program">
+      <div class="s-title">
+        <h2>Main Program</h2>
+        <hr>
+      </div>
+  
+      <ul class="activities">
+  
+        <li class="activity">
+          <img src='/media/public-speaker-icon.png' alt="" class="icon">
+          <h3 class="title">Lecturee</h3>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero esse eveniet est.</p>
+        </li>
+  
+        <li class="activity">
+          <img src="/media/board-icon.png" alt="" class="icon">
+          <h3 class="title">Conference 
+            Exhibition</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </li>
+  
+        <li class="activity">
+          <img src="/media/chat-icon.png" alt="" class="icon">
+          <h3 class="title">Forum</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis unde</p>
+        </li>
+  
+        <li class="activity">
+          <img src="/media/workshop-icon.png" alt="" class="icon">
+          <h3 class="title">Workshop</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis?</p>
+        </li>
+  
+        <li class="activity">
+          <img src="/media/networking-icon.png" alt="" class="icon">
+          <h3 class="title">Conference Ignite</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </li>
+  
+      </ul>
+  
+      
+      <div class="join-btn">Join YW Comedians Conference 2022</div>
+
+      <a href="#" class="see-program">SEE THE WHOLE PROGRAM</a>
+    </section>
+  
+    <section class="featured-comedians">
+      <div class="s-title">
+        <h2>Featured Comedians</h2>
+        <hr>
+      </div>
+  
+      <ul class="comedians" id='comedians-list'>
+      </ul>
+
+      <div class="more-btn active" id="more-btn">
+        <p>MORE</p><i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+  </div>
+
+  <sectiion class="partners">
+    <h2>Partners</h2>    
+    <ul class="partners-list">
+      <li class="partner"><img class="partner-img" src="/media/bbc-logo-gray.png" alt=""></li>
+      <li class="partner"><img class="partner-img" src="/media/Forbes-logo-gray.png" alt=""></li>
+      <li class="partner"><img class="partner-img" src="/media/google-logo-gray.png" alt=""></li>
+      <li class="partner"><img class="partner-img" src="/media/mozilla-logo-gray.png" alt=""></li>
+      <li class="partner"><img class="partner-img" src="media/cnn-logo-gray.png" alt=""></li>
+    </ul>
+  </sectiion>
+  <footer>
+    <img class="footer-img" src="/media/event-logo.png" alt="">
+    <p class="rights">2022 Yearly World Comedians Conference <br> Some rights reserved</p>
+  </footer>
+  
+<script src='app.js'></script>
+</body>
+</html>

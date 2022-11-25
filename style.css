@@ -1,0 +1,713 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  position: relative;
+  background: #f0f0f0;
+  font-family: 'roboto', sans-serif;
+}
+
+section {
+  padding: 20px;
+}
+
+/* Header */
+
+.navbar {
+  padding: 10px 0 15px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menu-btn {
+  color: #707d9c;
+  font-size: 24px;
+}
+
+.navbar-menu .menu-options {
+  display: none;
+}
+
+.menu-links {
+  padding-top: 20px;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #e3e3e3;
+  gap: 40px;
+  display: none;
+}
+
+.menu-links.active {
+  display: flex;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.nav-logo {
+  align-self: center;
+  width: 60%;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 10vw;
+  width: 80%;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #4f4f4f;
+  font-weight: 900;
+  font-size: 24px;
+  border-bottom: #4f4f4f 1px solid;
+  display: block;
+}
+
+.nav-link a.active {
+  color: #ec5242;
+}
+
+/* Home page */
+
+.home {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  padding-top: 60px;
+}
+
+.home::before {
+  content: "";
+  background: url(media/comedy-background.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.subtitle-home {
+  font-weight: 300;
+  font-size: 30px;
+  color: #ec5242;
+}
+
+.p-title {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home .description {
+  font-weight: 700;
+  padding: 10px;
+  background: rgba(234, 235, 240, 0.6);
+  border: 2px solid white;
+  font-size: 12px;
+  margin-bottom: 20px;
+  max-width: 450px;
+  color: #4f4f4f;
+}
+
+.home .date {
+  font-weight: 900;
+  font-size: 30px;
+  color: #4f4f4f;
+}
+
+.home .place {
+  font-weight: 700;
+  font-size: 14px;
+  color: #4f4f4f;
+}
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: #272a31;
+  position: relative;
+  z-index: 1;
+  padding: 60px 0;
+}
+
+.main-program::before {
+  content: "";
+  background: url(media/x-background.png);
+  background-repeat: repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.main-program .s-title {
+  color: #fff;
+}
+
+.s-title hr {
+  width: 10%;
+  height: 1px;
+  border: none;
+  background-color: #ec5242;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.activity {
+  display: grid;
+  grid-template-columns: auto 1fr 2fr;
+  grid-gap: 10px;
+  align-items: center;
+  width: 95%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 15px;
+}
+
+.activity:hover {
+  border: #fff solid 2px;
+}
+
+.activity .icon {
+  width: 32px;
+  height: 32px;
+}
+
+.activity .title {
+  color: #ec5242;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.activity .description {
+  display: inline-flex;
+  text-align: justify;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.join-btn {
+  background: #ec5242;
+  width: 80%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.see-program {
+  display: none;
+}
+
+/* Featured comedians */
+
+.featured-comedians {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.comedians {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comedian {
+  display: flex;
+  gap: 20px;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo::before {
+  content: '';
+  position: absolute;
+  background: url(/media/chessbg.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  top: -12px;
+  left: -12px;
+}
+
+.photo img {
+  width: 100px;
+  position: relative;
+}
+
+.comedian .information {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+  font-size: 12px;
+  color: #4f4f4f;
+  font-weight: 700;
+}
+
+.comedian .information .description {
+  color: #ec5242;
+}
+
+.comedian .information hr {
+  width: 10%;
+}
+
+.more-btn {
+  width: 100%;
+  border: #4f4f4f4f 1px solid;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 0;
+  color: #4f4f4f;
+  font-weight: 700;
+  display: none;
+}
+
+.more-btn.active {
+  display: flex;
+}
+
+.more-btn p {
+  font-size: 13px;
+}
+
+.more-btn i {
+  color: #ec5242;
+}
+
+/* About page */
+
+.about {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  justify-content: space-around;
+}
+
+.about::before {
+  content: "";
+  background: url(media/comedy-background.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 45px;
+  color: #ec5242;
+  position: relative;
+  font-weight: 900;
+}
+
+.about-title::after {
+  content: '';
+  border-bottom: rgb(236, 82, 66, 0.4) 2px solid;
+  position: absolute;
+  bottom: -10%;
+  width: 20px;
+  left: 50%;
+}
+
+.about-page .s-title {
+  color: #4f4f4f;
+  font-weight: 900;
+}
+
+.about-description {
+  font-weight: 700;
+  padding: 10px;
+  background: rgba(255, 255, 255, 1);
+  border: 2px solid #e3e3e3;
+  font-size: 12px;
+  margin-bottom: 20px;
+  max-width: 90%;
+  color: #4f4f4f;
+  text-align: center;
+}
+
+.about .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  color: #4f4f4f;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.about .contact .email {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+/* Logo section */
+
+section.logo {
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo-description {
+  font-size: 12px;
+  color: #4f4f4f;
+  font-weight: 700;
+}
+
+.logo-container {
+  border: 1px #272a3123 solid;
+  padding: 20px 0;
+}
+
+/* Past Events */
+
+.past-events {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  background: #fff;
+}
+
+.past-events-description {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.past-events-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 20px;
+  align-items: center;
+}
+
+.past-event {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f0f0f0;
+  box-shadow: inset 0 0 0 1000px rgba(236, 82, 66, 0.55);
+  width: 300px;
+  max-width: 300px;
+}
+
+.event-2013 {
+  background: url(media/2013-event.jpeg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.event-2011 {
+  background: url(media/2011-event.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Partners */
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px 0 20px;
+  align-items: center;
+  background: #272a31;
+}
+
+.partners h2 {
+  color: #fff;
+  position: relative;
+  font-weight: 300;
+}
+
+.partners h2::before {
+  content: "";
+  width: 50%;
+  border-bottom: #ec5242 1px solid;
+  position: absolute;
+  left: 25%;
+  bottom: -8px;
+}
+
+.partners-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.partner {
+  width: 26%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-img {
+  width: 100%;
+  max-height: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  font-weight: 700;
+  color: #4f4f4f;
+  font-size: 12px;
+  background: #fff;
+}
+
+.footer-img {
+  width: 200px;
+}
+
+.rights {
+  max-width: 37%;
+}
+
+/* Media query for desktop */
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0;
+  }
+
+  #menu-btn,
+  #close-btn {
+    display: none;
+  }
+
+  .navbar-menu .menu-options {
+    padding: 5px 10%;
+    background: #272a31;
+    display: block;
+  }
+
+  .navbar-menu .options {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    list-style: none;
+    color: #fff;
+  }
+
+  .navbar-menu .menu-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px 0;
+    background: #fff;
+    color: #4f4f4f;
+    font-weight: 700;
+    font-size: 14px;
+    position: initial;
+  }
+
+  .nav-logo {
+    width: 150px;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: row;
+    gap: 4vw;
+    padding-left: 0;
+    width: fit-content;
+  }
+
+  .nav-link a {
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: none;
+    padding: 10px;
+  }
+
+  .nav-link a:hover {
+    border: #ec5242 1px solid;
+    color: #ec5242;
+    cursor: pointer;
+    padding: 9px;
+  }
+
+  /* Home */
+
+  .home {
+    align-items: baseline;
+    width: 66vw;
+    margin: 0 0 0 10vw;
+  }
+
+  /* Main program */
+
+  .activities {
+    flex-direction: row;
+    gap: 5px;
+    width: 80%;
+  }
+
+  .activity {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 2fr;
+    height: 200px;
+    justify-items: center;
+    align-items: baseline;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  .activity .description {
+    text-align: center;
+  }
+
+  .join-btn {
+    display: none;
+  }
+
+  .see-program {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1px;
+  }
+
+  /* Featured comedians */
+
+  .comedians {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .comedian {
+    flex: 1;
+    min-width: 35%;
+  }
+
+  /* About */
+
+  .about {
+    width: 60vw;
+  }
+
+  .logo {
+    align-items: center;
+  }
+
+  .logo-container {
+    width: fit-content;
+    padding: 20px;
+  }
+
+  .past-events-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .past-event {
+    flex: 1;
+  }
+
+  .past-event .name {
+    min-width: 35%;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .more-btn.active {
+    display: none;
+  }
+
+  /* Partners */
+
+  .partners-list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .partner {
+    width: 15%;
+  }
+}
